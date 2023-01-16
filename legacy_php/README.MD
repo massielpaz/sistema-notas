@@ -30,3 +30,12 @@ Creacion de un sistema de registro de notas, usando las tecnologias de:
 
 > pecl install xdebug
 > docker-php-ext-enable xdebug
+
+# Generar una migracion (Crear una tabla)
+
+> php artisan make:migration nombre_de_la_tabla
+
+_Nota: Cuando una migracion falla, es posible borrarla desde HeidiSQL y volver a crear la migracion_ 
+
+# Migrar la tabla (Crearla en la base de datos)
+> php artisan migrate
