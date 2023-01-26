@@ -17,6 +17,7 @@ return new class extends Migration
         Schema::create("materias", function (Blueprint $table) {
             $table->integer('id_materias')->autoIncrement();
             $table->string('nombre_materia');
+            $table->timestamps();
         });
     }
 
