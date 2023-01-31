@@ -1,24 +1,23 @@
 version: '3.8'
 services:
   php-apache-environment:
-    container_name: php-apache
+    container_name: php-apache-notas
     build:
-      context: ./php
       dockerfile: Dockerfile
     depends_on:
-      - db
+      - maria-db-notas
     volumes:
-      - ./php/src:/var/www/html/
+      - C:/containers/php_apache:/var/www/html/
     ports:
-      - 8000:80
-  db:
-    container_name: db
-    image: mysql
+      - 6996:80
+  maria-db-notas:
+    container_name: maria-db-notas
+    image: mariadb:10.9.4
     restart: always
+    volumes:
+      - C:\containers\mariadb_notas:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
-      MYSQL_DATABASE: MYSQL_DATABASE
-      MYSQL_USER: MYSQL_USER
-      MYSQL_PASSWORD: MYSQL_PASSWORD
+      MARIADB_PASSWORD: secret
+      MARIADB_ROOT_PASSWORD: secret
     ports:
-      - "9906:3306"
+      - "3306:3306"
