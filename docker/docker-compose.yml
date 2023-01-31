@@ -8,6 +8,8 @@ services:
       - maria-db-notas
     volumes:
       - C:/containers/php_apache:/var/www/html/
+    networks:
+      - notas-network
     ports:
       - 6996:80
   maria-db-notas:
@@ -19,5 +21,11 @@ services:
     environment:
       MARIADB_PASSWORD: secret
       MARIADB_ROOT_PASSWORD: secret
+    networks:
+      - notas-network
     ports:
       - "3306:3306"
+
+networks:
+  notas-network:
+    driver: bridge
