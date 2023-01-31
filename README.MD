@@ -53,6 +53,8 @@ _Nota: Cuando una migracion falla, es posible borrarla desde HeidiSQL y volver a
 - Crear el archivo .env usando de base el .env.example
 - Cambiar los parametros: 
 
+
+```
 APP_NAME=SistamaNotas
 APP_ENV=local
 APP_KEY=base64:uz1fR+wnMHeKgrt89OQB7sAmIbExznkstr6ag2fYgCY=
@@ -65,6 +67,8 @@ DB_PORT=3306
 DB_DATABASE=laravel_notas
 DB_USERNAME=root
 DB_PASSWORD=secret
+
+```
 
 - Instalar las migraciones usando el comando php artisan migrate
 
