@@ -1,7 +1,7 @@
 FROM php:8.2.1-apache
 
 RUN apt-get update && apt-get upgrade -y
-RUN apt-install libzip-dev zip -y
+RUN apt-get install libzip-dev zip -y
 
 RUN docker-php-ext-install zip mysqli pdo pdo_mysql && docker-php-ext-enable mysqli
 
