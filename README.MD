@@ -43,10 +43,10 @@ _Nota: Cuando una migracion falla, es posible borrarla desde HeidiSQL y volver a
 
 # Pasos para instalar usando Docker
 
-- Crear dos carpetas dentro de la carpeta C:/ llamada containers
+- Crear una carpeta dentro de C:/ llamada containers
 - Dentro de la carpeta C:/containers crear dos carpetas. Una llamada php_apache y la otra mariadb_notas
 - Clonar el repositorio en C:/containers/php_apache
-- Iniciar una terminañ e ingresar a la carpeta C:/containers/php_apache/docker
+- Iniciar una terminal e ingresar a la carpeta C:/containers/php_apache/docker
 - Dentro de esta carpeta ejecutar el comando docker compose up -d
 - Una vez creados los contenedores. Ejecutar el comando docker exec -it php-apache-notas /bin/bash
 - Instalar el proyecto usando el comando composer install
