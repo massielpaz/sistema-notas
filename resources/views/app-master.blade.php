@@ -4,11 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.104.2">
+    <meta name="description" content="Sistema de notas UML">
     <title>Sistema de notas</title>
     <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('fontawesome/css/fontawesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('fontawesome/css/brands.css') }}" rel="stylesheet">
+    <link href="{{ asset('fontawesome/css/solid.css') }}" rel="stylesheet">
+
     <meta name="theme-color" content="#712cf9">
     <style>
         .bd-placeholder-img {
@@ -76,13 +78,14 @@
 
 <body>
     @include('layouts.partials.navbar')
-
     <main class="container">
         @yield('content')
     </main>
 
     <footer class="pt-5 my-5 text-muted border-top">
-        Created by the Bootstrap team &middot; &copy; 2022
+        <div class="container text-center">
+        <i class="fa-solid fa-user-graduate"></i> Creado por estudiantes de UML Sede Ocotal con mucho ❤️ © 2023
+        </div>
     </footer>
     </div>
 

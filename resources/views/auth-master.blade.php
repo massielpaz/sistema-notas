@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sistama de notas | @yield('titulo')</title>
-    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <title>Sistama de notas</title>
 
-    <!-- Favicons -->
+    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('fontawesome/css/fontawesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('fontawesome/css/brands.css') }}" rel="stylesheet">
+    <link href="{{ asset('fontawesome/css/solid.css') }}" rel="stylesheet">
     <meta name="theme-color" content="#712cf9">
-    <!-- Custom styles for this template -->
     <link href="{{ asset('css/login-template.css') }}" rel="stylesheet">
 </head>
 
@@ -20,7 +21,7 @@
             @show
         </main>
         <footer class="pt-5 my-5 text-muted border-top">
-            UML NOTAS &middot; &copy; 2023
+            <i class="fa-solid fa-user-graduate"></i> Creado por estudiantes de UML Sede Ocotal con mucho ❤️ © 2023
         </footer>
     </div>
     <script src="{{ asset('boostrap/js/bootstrap.min.js') }}"></script>

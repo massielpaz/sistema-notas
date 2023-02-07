@@ -1,16 +1,21 @@
 @extends('app-master')
 
 @section('content')
-    <div class="bg-light p-5 rounded">
-        @auth
-            <h1>Dashboard</h1>
-            <p class="lead">Only authenticated users can access this section.</p>
-            <a class="btn btn-lg btn-primary" href="https://codeanddeploy.com" role="button">View more tutorials here &raquo;</a>
-        @endauth
-
-        @guest
-            <h1>Homepage</h1>
-            <p class="lead">Your viewing the home page. Please login to view the restricted data.</p>
-        @endguest
+<br>
+<div class="bg-light p-5 rounded">
+    <div class="row">
+        <div class="col">
+            <img class="img-fluid mx-auto d-block" src="{{ asset('img/logo_uml.png') }}" alt="logo" width="190" height="190" />
+        </div>
     </div>
+    <br>
+    @auth
+    <h1>Centro de control</h1>
+
+    @endauth
+
+    @guest
+    @include('layouts.partials.guestalert')
+    @endguest
+</div>
 @endsection
