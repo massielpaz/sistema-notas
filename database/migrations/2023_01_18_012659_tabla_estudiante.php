@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('correo_estudiante');
             $table->string('carrera_estudiante');
             $table->integer('anio_estudiante');
+            $table->timestamps();
         });
     }
 

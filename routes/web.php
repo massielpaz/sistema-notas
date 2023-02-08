@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MateriasController;
+use App\Http\Controllers\EstudianteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
      */
     Route::get('/', 'HomeController@index')->name('home.index');
     Route::resource('materias', MateriasController::class);
+    Route::resource('estudiante', EstudianteController::class);
 
     Route::group(['middleware' => ['guest']], function () {
         /**
