@@ -64,7 +64,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <p class="mb-5 pb-lg-2" style="color: #393f81;">Ya tienes una cuenta? <a href="{{ route('login.perform') }}" style="color: #393f81;">Inicia sesión aqui</a></p>
                             <button type="submit" class="w-100 btn btn-lg btn-primary btn-block mb-4">
                                 <i class="fa-solid fa-right-to-bracket"></i> Registrarse
                             </button>
