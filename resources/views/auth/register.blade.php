@@ -24,6 +24,19 @@
                         <h2 class="fw-bold mb-5"><i class="fa-regular fa-bell"></i> Registrate ahora</h2>
                         <form method="post" action="{{ route('register.perform') }}">
                             @csrf
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="text" class="form-control" name="name" value="{{ old('name') }}" required="required" autofocus autocomplete="off" />
+                                        <label class="form-label" for="name"><i class="fa-solid fa-person-rays"></i> Nombre completo</label>
+                                        @if ($errors->has('name'))
+                                        <span class="text-danger text-left">{{ $errors->first('name') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="row">
                                 <div class="col">
                                     <div class="form-outline">
