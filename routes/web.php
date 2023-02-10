@@ -3,6 +3,7 @@
 use App\Http\Controllers\DocentesController;
 use App\Http\Controllers\MateriasController;
 use App\Http\Controllers\EstudianteController;
+use App\Http\Controllers\NotasController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::resource('materias', MateriasController::class);
     Route::resource('estudiante', EstudianteController::class);
     Route::resource('docentes', DocentesController::class);
+    Route::resource('notas', NotasController::class);
 
     Route::group(['middleware' => ['guest']], function () {
         /**

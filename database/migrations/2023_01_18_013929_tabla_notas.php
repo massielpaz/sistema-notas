@@ -15,7 +15,7 @@ return new class extends Migration
     {
         //
         Schema::create("notas", function (Blueprint $table) {
-            $table->integer('id_notas')->autoIncrement();
+            $table->integer('id_nota')->autoIncrement();
             $table->integer('id_estudiante');
             $table->integer('id_materia');
             $table->integer('id_docente');

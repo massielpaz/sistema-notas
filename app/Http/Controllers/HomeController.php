@@ -29,7 +29,7 @@ class HomeController extends Controller
                 [
                     "nombre" => "Notas",
                     "icono" => "fa-star",
-                    "ruta" => "home.index"
+                    "ruta" => "notas.index"
                 ]
             ]);
     }
