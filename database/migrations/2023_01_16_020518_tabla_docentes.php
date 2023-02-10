@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('titulo_docente');
             $table->string('correo_docente');
             $table->string('telefono_docente');
+            $table->timestamps();
         });
     }
 

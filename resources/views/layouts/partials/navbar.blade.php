@@ -11,6 +11,7 @@
                 <li><a href="{{ route('home.index') }}" class="nav-link px-2 text-white"><i class="fa-solid fa-house"></i> Inicio</a></li>
                 <li><a href="{{ route('materias.index') }}" class="nav-link px-2 text-white"><i class="fa-solid fa-book"></i> Materias</a></li>
                 <li><a href="{{ route('estudiante.index') }}" class="nav-link px-2 text-white"><i class="fa-solid fa-graduation-cap"></i> Estudiantes</a></li>
+                <li><a href="{{ route('docentes.index') }}" class="nav-link px-2 text-white"><i class="fa-solid fa-chalkboard-user"></i> Docentes</a></li>
             </ul>
             @auth
             {{auth()->user()->name}}

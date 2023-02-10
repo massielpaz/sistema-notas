@@ -20,6 +20,11 @@ class HomeController extends Controller
                     "nombre" => "Materias",
                     "icono" => "fa-book",
                     "ruta" => "materias.index"
+                ],
+                [
+                    "nombre" => "Docentes",
+                    "icono" => "fa-chalkboard-user",
+                    "ruta" => "docentes.index"
                 ]
             ]);
     }

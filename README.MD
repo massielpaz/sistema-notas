@@ -46,6 +46,9 @@ _Nota: Cuando una migracion falla, es posible borrarla desde HeidiSQL y volver a
 # Generar un Request
 > php artisan make:request NombreRequest
 
+# Generar un Model
+> php artisan make:model NombreModelo
+
 _Nota: Es necesario creo un Controller, un Request y un Model por cada tabla que se va trabajar, ademas agregar el nuevo Controller generado dentro del archivo de rutas de Laravel_
 
 # Pasos para instalar usando Docker
