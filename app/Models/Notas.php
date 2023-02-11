@@ -13,7 +13,10 @@ class Notas extends Model
     protected $primaryKey = 'id_nota';
 
     protected $fillable = [
-        'nota'
+        'nota',
+        'id_estudiante',
+        'id_materia',
+        'id_docente'
     ];
 
     public function estudiante(): HasOne

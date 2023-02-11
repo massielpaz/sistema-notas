@@ -14,22 +14,26 @@ class HomeController extends Controller
                 [
                     "nombre" => "Estudiantes",
                     "icono" => "fa-graduation-cap",
-                    "ruta" => "estudiante.index"
+                    "ruta" => "estudiante.index",
+                    "color" => "#C7F2A4"
                 ],
                 [
                     "nombre" => "Materias",
                     "icono" => "fa-book",
-                    "ruta" => "materias.index"
+                    "ruta" => "materias.index",
+                    "color" => "#31C6D4"
                 ],
                 [
                     "nombre" => "Docentes",
                     "icono" => "fa-chalkboard-user",
-                    "ruta" => "docentes.index"
+                    "ruta" => "docentes.index",
+                    "color" => "#DEBACE"
                 ],
                 [
                     "nombre" => "Notas",
                     "icono" => "fa-star",
-                    "ruta" => "notas.index"
+                    "ruta" => "notas.index",
+                    "color" => "#FFD1D1"
                 ]
             ]);
     }

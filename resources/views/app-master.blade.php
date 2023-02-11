@@ -79,12 +79,13 @@
 <body>
     @include('layouts.partials.navbar')
     <main class="container">
+        <br>
         @yield('content')
     </main>
 
     <footer class="pt-5 my-5 text-muted border-top">
         <div class="container text-center">
-        <i class="fa-solid fa-user-graduate"></i> Creado por estudiantes de UML Sede Ocotal con mucho ❤️ © 2023
+        <i class="fa-solid fa-user-graduate"></i> Creado por los estudiantes de Ing. En Sistemas 4to año UML sede Ocotal con mucho ❤️ y 🥲 © 2023
         </div>
     </footer>
     </div>
