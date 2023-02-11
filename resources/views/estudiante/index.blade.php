@@ -48,7 +48,9 @@
             @endforeach
         </tbody>
     </table>
-    {!! $estudiante->links() !!}
+    <div class="d-flex">
+        {!! $estudiante->links() !!}
+    </div>
     @endauth
 
     @guest

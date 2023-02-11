@@ -39,7 +39,9 @@
             @endforeach
         </tbody>
     </table>
-    {!! $materias->links() !!}
+    <div class="d-flex">
+        {!! $materias->links() !!}
+    </div>
     @endauth
 
     @guest

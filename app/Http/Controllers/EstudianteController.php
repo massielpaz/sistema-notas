@@ -18,11 +18,11 @@ class EstudianteController extends Controller
         return view('estudiante.create')
             ->with('lista_carreras', [
                 "Ing. En sistemas",
-                "Enfermeria",
+                "Enfermería",
                 "Administración de empresas",
                 "Farmacia",
                 "Contabilidad",
-                "Psicologia",
+                "Psicología",
                 "Ingles",
                 "Educación fisica"
             ])
@@ -61,11 +61,11 @@ class EstudianteController extends Controller
         return view('estudiante.edit', compact('estudiante'))
             ->with('lista_carreras', [
                 "Ing. En sistemas",
-                "Enfermeria",
+                "Enfermería",
                 "Administración de empresas",
                 "Farmacia",
                 "Contabilidad",
-                "Psicologia",
+                "Psicología",
                 "Ingles",
                 "Educación fisica"
             ])

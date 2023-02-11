@@ -18,8 +18,19 @@ class MateriasSeeder extends Seeder
         # Materias::factory(5)->create();
         $Materias = [
             "Ingles",
-            "Ing. de Software",
-            "Programacion"
+            "Matematicas",
+            "Español",
+            "Medio ambiente",
+            "Desarrollador de Software",
+            "Cálculo I",
+            "Cálculo II",
+            "Diseño grafico",
+            "Diseño y arquitectura de redes",
+            "Diseño web",
+            "Mercadotecnia",
+            "Sistemas Expertos",
+            "Ing. de Software I",
+            "Ing. de Software II"
         ];
 
         foreach ($Materias as $Materia) {

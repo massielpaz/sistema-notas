@@ -44,7 +44,9 @@
             @endforeach
         </tbody>
     </table>
-    {!! $notas->links() !!}
+    <div class="d-flex">
+        {!! $notas->links() !!}
+    </div>
     @endauth
 
     @guest
