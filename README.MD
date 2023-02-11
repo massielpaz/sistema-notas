@@ -40,6 +40,9 @@ _Nota: Cuando una migracion falla, es posible borrarla desde HeidiSQL y volver a
 # Migrar la tabla (Crearla en la base de datos)
 > php artisan migrate
 
+# Instalar la base de datos completa (Datos y migraciones desde Zero)
+> php artisan migrate:fresh --seed
+
 # Generar un Controller
 > php artisan make:controller NombreController
 

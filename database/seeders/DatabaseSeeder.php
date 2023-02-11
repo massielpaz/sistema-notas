@@ -4,11 +4,10 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\Docentes;
-use App\Models\Estudiante;
 use Illuminate\Database\Seeder;
 use App\Models\User;
-use App\Models\Materias;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -19,9 +18,18 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(5)->create();
-        Materias::factory(5)->create();
-        Estudiante::factory(5)->create();
-        Docentes::factory(5)->create();
+        User::create([
+            'name' => fake()->name(),
+            'username' => 'admin',
+            'email' => 'admin@uml.edu.ni',
+            'email_verified_at' => now(),
+            'password' => 'laravel',
+            'remember_token' => Str::random(10)
+        ]);
+        $this->call([
+            MateriasSeeder::class,
+            EstudianteSeeder::class,
+            DocenteSeeder::class
+        ]);
     }
 }
